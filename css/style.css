@@ -138,6 +138,19 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color) !important;
 }
 
+/* inner page grid container */
+.page-container {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    margin: 2rem 0;
+    grid-gap: 1.5rem
+}
+
+.page-container > *:first-child {
+  grid-row: 1 / span 3;  
+}
+
+
 /* Navigation */
 #main-nav {
     background: #fff;
@@ -196,7 +209,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #showcase:before {
     content: '';
-    background: url('../img/featured.jpg') no-repeat center center/cover;
+    background: url('https://images.unsplash.com/photo-1687176013639-eff51be5cb88?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
